@@ -3,9 +3,10 @@ import {
   sepolia
 } from 'wagmi/chains';
 import { http } from 'wagmi';
-import 'dotenv';
+import "dotenv/config";
 
-const INFURA_API_KEY = process.env.INFURA_API_KEY
+const INFURA_API_KEY = process.env.NEXT_PUBLIC_INFURA_API_KEY
+// console.log(process.env.NEXT_PUBLIC_INFURA_API_KEY)
 
 export const config = getDefaultConfig({
   appName: 'RainbowKit demo',
