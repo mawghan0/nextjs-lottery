@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <>
       <div className="pl-2 xl:pl-8">
-        <h1 className="text-sm sm:text-base lg:text-lg">
+        <h1 className="text-sm sm:text-base lg:text-lg 2xl:text-xl">
           <span className="text-green-400 underline">Mawghan</span>-Lottery
         </h1>
       </div>
