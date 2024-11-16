@@ -30,7 +30,7 @@ export default function PlayerCount() {
   }, []);
 
   return (
-    <div className="text-base text-center overflow-hidden rounded-lg px-3 py-2 bg-blue-400">
+    <div className="text-sm text-center overflow-hidden rounded-xl px-3 py-1 bg-blue-400 mb-2">
       {isLoading ? (
         <p>Player Joined: Loading...</p>
       ) : count ? (

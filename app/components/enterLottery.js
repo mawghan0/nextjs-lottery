@@ -20,9 +20,9 @@ export default function EnterLottery() {
   };
 
   return (<>
-    <button onClick={enterRaffle} disabled={isPending} className="text-xl font-bold text-center text-blue-400 rounded-lg px-7 py-2 border border-blue-400">
+    <button onClick={enterRaffle} disabled={isPending} className="text-xl font-bold text-center text-white rounded-full px-1 py-3 mb-3 border border-green-400 bg-green-400 ">
       {isConnected ? (isPending ? "Entering..." : "Enter Raffle") : "Connect Wallet First"}
     </button>
-    <p>It needs 0.001 Eth(Sepolia Testnet) to entry the lottery</p>
+    <p className='text-center text-base mb-14'>It need <span className='text-red-500'>0.01 Eth(Sepolia Testnet)</span> to entry the lottery</p>
   </>);
 }
