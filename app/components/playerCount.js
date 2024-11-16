@@ -18,7 +18,6 @@ export default function PlayerCount() {
           functionName: "getNumberOfPlayers",
         });
         setCount(result.toString());
-        console.log(result.toString());
       } catch (error) {
         console.error("Error fetching recent count:", error);
       } finally {

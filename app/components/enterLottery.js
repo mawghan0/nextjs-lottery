@@ -17,13 +17,12 @@ export default function EnterLottery() {
       functionName: "enterRaffle",
       value: value
     });
-    console.log('entering')
   };
 
   return (<>
     <button onClick={enterRaffle} disabled={isPending} className="text-xl font-bold text-center text-blue-400 rounded-lg px-7 py-2 border border-blue-400">
       {isConnected ? (isPending ? "Entering..." : "Enter Raffle") : "Connect Wallet First"}
     </button>
-
+    <p>It needs 0.001 Eth(Sepolia Testnet) to entry the lottery</p>
   </>);
 }
