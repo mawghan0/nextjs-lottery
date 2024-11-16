@@ -2,6 +2,7 @@ import Connect from "@/app/components/connect";
 import Header from "@/app/components/header";
 import Body from "@/app/components/body";
 import RecentWinner from "./components/recentWinner";
+import EnterLottery from "./components/enterLottery";
 import PlayerCount from "./components/playerCount";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
           <Connect />
         </div>
         <Body />
+        <EnterLottery />
         <PlayerCount />
         <RecentWinner />
       </div>

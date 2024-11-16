@@ -1,3 +1,5 @@
+const { parseEther } = require("viem");
+
 const contractAddress = "0x87A38d0E72820A9fB5aE5F02C7f38a832Cd77C9F"
 
 const abi = [
@@ -14,6 +16,13 @@ const abi = [
     stateMutability: 'view',
     inputs: [],
     outputs: [{ type: 'uint256' }],
+  },
+  {
+    type: 'function',
+    name: 'enterRaffle',
+    stateMutability: 'payable',
+    inputs: [],
+    outputs: [],
   },
 
 ]
