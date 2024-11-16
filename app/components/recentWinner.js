@@ -35,7 +35,7 @@ export default function RecentWinner() {
   }, []);
 
   return (
-    <div className="text-sm text-center overflow-hidden rounded-2xl py-2 px-3 bg-green-400">
+    <div className="text-white text-sm text-center overflow-hidden rounded-2xl py-2 px-3 bg-green-400">
       {isLoading ? (
         <p>Recent Winner: Loading...</p>
       ) : winner ? (
